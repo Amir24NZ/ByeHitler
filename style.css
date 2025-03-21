@@ -1,0 +1,153 @@
+body {
+    font-family: 'Vazir', sans-serif; /* استفاده از فونت Lalezar */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* سایه برای خواناتر شدن */
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    direction: rtl;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    background-color: #000000 ;
+    color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px; 
+    padding: 20px;
+    position: relative;
+}
+
+header h1 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 36px;
+    
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.zobbo {
+    margin: 40px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    background: #000000;
+    border-radius: 15px; /* گوشه گرد برای بخش اصلی */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* سایه زیبا برای برجسته شدن */
+    align-items: center;
+    
+}
+
+.zobbo h2 {
+    color: #fff;
+    font-size: 50px;
+    margin-top: 15px;
+}
+
+.zobbo p {
+    line-height: 1.6;
+    font-size: 1em;
+    margin: 10px 0;
+    color: #f9f4fa; /* رنگ متن روشن‌تر برای خوانایی بهتر */
+}
+
+.zobbo-pic {
+    width: 200px;
+    height: px;
+
+}
+
+footer {
+    background-color: #000000 ;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px; 
+    padding: 20px;
+    position: relative;
+}
+
+
+footer a {
+
+    color: #9fe6eb;
+}
+
+.about {
+    margin: 40px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    background: #000000;
+    border-radius: 15px; /* گوشه گرد برای بخش اصلی */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* سایه زیبا برای برجسته شدن */
+    text-align: justify;
+    
+}
+
+.about h2 {
+    color: #fff;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.about p {
+    line-height: 1.6;
+    font-size: 1em;
+    margin: 10px 0;
+    color: #f9f4fa; /* رنگ متن روشن‌تر برای خوانایی بهتر */
+}
+
+.about-pic {
+    width: 100px;
+    height: px;
+    border-radius: 100px;
+    margin-left: 15px;
+
+}
+
+.abt {
+
+    display: flex;
+}
+
+.about2 {
+    margin: 40px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    background: #000000;
+    border-radius: 15px; /* گوشه گرد برای بخش اصلی */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* سایه زیبا برای برجسته شدن */
+    text-align: justify;
+    
+}
+
+.about2 h2 {
+    color: red;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.about2 p {
+    line-height: 1.6;
+    font-size: 1em;
+    margin: 10px 0;
+    color:red ; /* رنگ متن روشن‌تر برای خوانایی بهتر */
+}
+
+.about-pic {
+    width: 100px;
+    height: px;
+    border-radius: 100px;
+    margin-left: 15px;
+
+}
+
+.abt2 {
+
+    display: flex;
+}
