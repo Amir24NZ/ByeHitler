@@ -151,3 +151,51 @@ footer a {
 
     display: flex;
 }
+
+/* کانتینر */
+#container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0; left: 0;
+  overflow: visible;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* فشفشه: یک خط عمودی قرمز */
+.firework {
+  position: absolute;
+  width: 3px;
+  height: 80px;
+  background-color: red; /* رنگ خط فشفشه */
+  border-radius: 1.5px;
+  opacity: 1;
+  transform-origin: bottom center;
+}
+
+/* ذرات انفجار */
+.particle {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+/* رنگ های انفجار */
+.yellow { background-color: yellow; }
+.red { background-color: red; }
+.orange { background-color: orange; }
+.pink { background-color: pink; }
+.purple { background-color: purple; }
+
+/* انیمیشن انفجار ذرات */
+@keyframes explodeParticle {
+  to {
+    transform: translate(var(--x), var(--y));
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+}
