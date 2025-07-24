@@ -1,223 +1,45 @@
 body {
-    font-family: 'Vazir', sans-serif; /* استفاده از فونت Lalezar */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* سایه برای خواناتر شدن */
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
-    direction: rtl;
-    text-align: center;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-header {
-    background-color: #000000 ;
-    color: white;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px; 
-    padding: 20px;
-    position: relative;
-}
-
-header h1 {
-    color: #ffffff;
-    margin: 0;
-    font-size: 36px;
-    
-}
-
-header p {
-    font-size: 18px;
-    margin-top: 10px;
-}
-
-.zobbo {
-    margin: 40px auto;
-    padding: 20px;
-    width: 90%;
-    max-width: 600px;
-    background: #000000;
-    border-radius: 15px; /* گوشه گرد برای بخش اصلی */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* سایه زیبا برای برجسته شدن */
+    display: flex;
+    justify-content: center;
     align-items: center;
-    
+    min-height: 100vh;
+    background-color: #000; /* پس زمینه سیاه */
+    color: #fff; /* رنگ متن سفید */
+    font-family: sans-serif;
+    background-image: url('https://raw.githubusercontent.com/Amir24NZ/ByeHitler/refs/heads/main/pic/far.png');
+    background-size: 10%; /* اندازه تکسچر خیلی ریز و پرتعداد */
+    background-repeat: repeat; /* مطمئن میشیم که تکرار بشه */
+    background-blend-mode: screen; /* برای سفید کردن تکسچر سیاه در پس زمینه سیاه */
 }
 
-.zobbo h2 {
-    color: #fff;
-    font-size: 50px;
-    margin-top: 15px;
+@media (max-width: 768px) {
+    body {
+        background-size: 25%; /* اندازه تکسچر 10% برای صفحه‌نمایش‌های کوچک‌تر */
+    }
 }
 
-.zobbo p {
-    line-height: 1.6;
-    font-size: 1em;
-    margin: 10px 0;
-    color: #f9f4fa; /* رنگ متن روشن‌تر برای خوانایی بهتر */
-}
-
-.zobbo-pic {
-    width: 200px;
-    height: px;
-
-}
-
-footer {
-    background-color: #000000 ;
-    color: white;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px; 
-    padding: 20px;
-    position: relative;
-}
-
-
-footer a {
-
-    color: #9fe6eb;
-}
-
-.about {
-    margin: 40px auto;
-    padding: 20px;
-    width: 90%;
-    max-width: 600px;
-    background: #000000;
-    border-radius: 15px; /* گوشه گرد برای بخش اصلی */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* سایه زیبا برای برجسته شدن */
-    text-align: justify;
-    
-}
-
-.about h2 {
-    color: #fff;
-    font-size: 1.8em;
-    margin-bottom: 15px;
-}
-
-.about p {
-    line-height: 1.6;
-    font-size: 1em;
-    margin: 10px 0;
-    color: #f9f4fa; /* رنگ متن روشن‌تر برای خوانایی بهتر */
-}
-
-.about-pic {
-    width: 100px;
-    height: px;
-    border-radius: 100px;
-    margin-left: 15px;
-
-}
-
-.abt {
-
+.container {
+    text-align: center;
     display: flex;
-}
-
-.about2 {
-    margin: 40px auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
-    width: 90%;
-    max-width: 600px;
-    background: #000000;
-    border-radius: 15px; /* گوشه گرد برای بخش اصلی */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* سایه زیبا برای برجسته شدن */
-    text-align: justify;
-    
 }
 
-.about2 h2 {
-    color: red;
-    font-size: 1.8em;
-    margin-bottom: 15px;
+.circular-image {
+    width: 200px; /* اندازه عکس دایره ای */
+    height: 200px;
+    border-radius: 50%; /* دایره ای کردن عکس */
+    object-fit: cover; /* مطمئن شدن از اینکه عکس داخل دایره به خوبی جا بیفته */
+    margin-bottom: 20px; /* فاصله بین عکس و متن */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* کمی سایه برای برجسته شدن عکس */
 }
 
-.about2 p {
-    line-height: 1.6;
-    font-size: 1em;
-    margin: 10px 0;
-    color:red ; /* رنگ متن روشن‌تر برای خوانایی بهتر */
-}
-
-.about-pic {
-    width: 100px;
-    height: px;
-    border-radius: 100px;
-    margin-left: 15px;
-
-}
-
-.abt2 {
-
-    display: flex;
-}
-
-/* کانتینر */
-#container {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0; left: 0;
-  overflow: visible;
-  pointer-events: none;
-  z-index: 9999;
-}
-
-/* فشفشه: یک خط عمودی قرمز */
-.firework {
-  position: absolute;
-  width: 3px;
-  height: 80px;
-  background-color: red; /* رنگ خط فشفشه */
-  border-radius: 1.5px;
-  opacity: 1;
-  transform-origin: bottom center;
-}
-
-/* ذرات انفجار */
-.particle {
-  position: absolute;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  opacity: 1;
-}
-
-/* رنگ های انفجار */
-.yellow { background-color: yellow; }
-.red { background-color: red; }
-.orange { background-color: orange; }
-.pink { background-color: pink; }
-.purple { background-color: purple; }
-
-/* انیمیشن انفجار ذرات */
-@keyframes explodeParticle {
-  to {
-    transform: translate(var(--x), var(--y));
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-}
-
-
-@media (max-width: 768px) {
-  .about  {
-    margin: 40px 15px; /* بالا و پایین 40px، چپ و راست 15px */
-    width: auto;       /* چون margin دادیم، بهتره width رو auto کنیم */
-  }
-}
-
-@media (max-width: 768px) {
-  .about2  {
-    margin: 40px 15px; /* بالا و پایین 40px، چپ و راست 15px */
-    width: auto;       /* چون margin دادیم، بهتره width رو auto کنیم */
-  }
-}
-
-@media (max-width: 768px) {
-  .zobbo  {
-    margin: 40px 15px; /* بالا و پایین 40px، چپ و راست 15px */
-    width: auto;       /* چون margin دادیم، بهتره width رو auto کنیم */
-  }
+.timeline-text {
+    font-size: 1.5em; /* اندازه متن */
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* کمی سایه برای برجسته شدن متن */
 }
